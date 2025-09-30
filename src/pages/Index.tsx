@@ -3,24 +3,38 @@ import { useSearchParams } from 'react-router-dom';
 import { Search, Filter } from 'lucide-react';
 import { Navbar } from '@/components/Navbar';
 import { MovieCard } from '@/components/MovieCard';
-import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useMoviesStore } from '@/stores/movies';
 import { Movie } from '@/types';
 import { motion } from 'framer-motion';
+import api from '@/lib/api'
 
 const Index = () => {
   const [searchParams] = useSearchParams();
-  const { movies, cinemas, loadData } = useMoviesStore();
+  const {  cinemas } = useMoviesStore();
   const [filteredMovies, setFilteredMovies] = useState<Movie[]>([]);
   const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
   const [selectedGenre, setSelectedGenre] = useState('all');
   const [selectedCity, setSelectedCity] = useState('all');
 
+  const [ movies, setMovies] = useState<Movie[]>([]);
+
   useEffect(() => {
-    loadData();
-  }, [loadData]);
+   const moviesApi = async () =>{
+    try {
+      const response = await api.get('/movies');
+
+      console.log(response);
+      setMovies(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+   }
+
+
+   moviesApi();
+  }, []);
 
   useEffect(() => {
     let filtered = movies.filter(movie => movie.isActive);
