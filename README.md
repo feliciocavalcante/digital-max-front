@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+# 🎬 DIGITAL-MAX-FRONT
 
-## Project info
+Este repositório contém o frontend de um projeto de streaming.
 
-**URL**: https://lovable.dev/projects/d4e14676-50db-4225-841a-1a2a60c689fc
+## 🛠️ Tecnologias Utilizadas
 
-## How can I edit this code?
+Este projeto foi construído com uma stack moderna e robusta para desenvolvimento frontend, focada em velocidade e escalabilidade:
 
-There are several ways of editing your application.
+| Tecnologia | Descrição |
+| :--- | :--- |
+| **Vite** | Ferramenta de build extremamente rápida, usada para empacotamento do projeto. |
+| **TypeScript** | Adiciona tipagem estática ao JavaScript, aumentando a segurança e manutenção do código. |
+| **React** | Biblioteca JavaScript líder para construção de interfaces de usuário (UI) componentizadas. |
+| **Tailwind CSS** | Framework CSS *utility-first* que agiliza a estilização e personalização. |
+| **shadcn/ui** | Coleção de componentes UI de alta qualidade, acessíveis e customizáveis, baseados em Radix UI e estilizados com Tailwind CSS. |
 
-**Use Lovable**
+## 🚀 Primeiros Passos
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d4e14676-50db-4225-841a-1a2a60c689fc) and start prompting.
+Siga as instruções abaixo para configurar e executar o projeto em seu ambiente de desenvolvimento local.
 
-Changes made via Lovable will be committed automatically to this repo.
+### Pré-requisitos
 
-**Use your preferred IDE**
+Certifique-se de ter o **Node.js** e o **npm** (ou Yarn/pnpm/Bun) instalados.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Instalação e Execução
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1.  **Clone o Repositório:**
+    ```bash
+    git clone [https://github.com/feliciocavalcante/digital-max-front.git](https://github.com/feliciocavalcante/digital-max-front.git)
+    ```
 
-Follow these steps:
+2.  **Acesse o Diretório do Projeto:**
+    ```bash
+    cd digital-max-front
+    ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3.  **Instale as Dependências:**
+    ```bash
+    npm install 
+    # ou
+    # bun install 
+    ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4.  **Execute o Projeto:**
+    O comando abaixo inicia o servidor de desenvolvimento.
+    ```bash
+    npm run dev
+    # ou
+    # bun run dev
+    ```
+    O aplicativo estará acessível em `http://localhost:5173` (ou porta similar).
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🤝 Contribuindo
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Agradecemos o seu interesse em contribuir! Siga os passos abaixo para submeter suas alterações:
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d4e14676-50db-4225-841a-1a2a60c689fc) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1.  **Faça um fork** do projeto.
+2.  **Crie uma nova branch** para sua feature ou correção:
+    ```bash
+    git checkout -b feature/minha-melhoria
+    ```
+3.  **Commit suas mudanças**, utilizando mensagens de commit descritivas:
+    ```bash
+    git commit -m "feat: Adiciona tela de login customizada"
+    ```
+4.  **Envie as mudanças** para o seu repositório remoto:
+    ```bash
+    git push origin feature/minha-melhoria
+    ```
+5.  **Abra um Pull Request (PR)** para a branch principal (`main`) deste repositório.
